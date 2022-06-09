@@ -1,0 +1,29 @@
+[
+  {
+    "entityName": "Human",
+    "cellCost": {
+      "S": "5",
+      "W": "2",
+      "T": "3",
+      "P": "1"
+    }
+  },
+  {
+    "entityName": "Swamper",
+    "cellCost": {
+      "S": "2",
+      "W": "2",
+      "T": "5",
+      "P": "2"
+    }
+  },
+  {
+    "entityName": "Woodman",
+    "cellCost": {
+      "S": "3",
+      "W": "3",
+      "T": "2",
+      "P": "2"
+    }
+  }
+]
