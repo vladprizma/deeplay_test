@@ -2,10 +2,7 @@ import errorcode.GameSolverErrorCode;
 import exception.GameSolverException;
 
 public class Params {
-    public static final String baseTermsPath = "./inputData/baseTerms.json";
-    public static final String fictionTermsPath = "./inputData/fictionTerms.json";
-
-    private static String pathToTermsFile = fictionTermsPath;
+    private static String pathToTermsFile = "./inputData/baseTerms.json";
 
     public static void setPathToTermsFile(final String path) throws GameSolverException {
         if (isBlank(path))
@@ -20,6 +17,4 @@ public class Params {
     public static boolean isBlank(String string) {
         return string == null || string.length() == 0 || string.trim().length() == 0;
     }
-
-
 }

@@ -4,10 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TestSolution {
+    public static final String baseTermsPath = "./inputData/baseTerms.json";
 
     @Test
     public void testGetResultBaseTerms() throws GameSolverException {
-        Params.setPathToTermsFile(Params.baseTermsPath);
+        Params.setPathToTermsFile(baseTermsPath);
         long start = System.currentTimeMillis();
         /*
         S T W S
@@ -60,7 +61,7 @@ public class TestSolution {
 
     @Test
     public void testGetResultFictionTerms() throws GameSolverException {
-        Params.setPathToTermsFile(Params.fictionTermsPath);
+        Params.setPathToTermsFile("./inputData/fictionTerms.json");
         /*
         U N R E
         A L U N

@@ -11,7 +11,7 @@ public enum GameSolverErrorCode {
     INCORRECT_PATH_TO_TERMS_FILE("Given string path to file is either null or doesn't contain non-whitespace symbols"),
     INCORRECT_FILE("Given path to the file either doesn't exists, hidden, a directory or unreadable");
 
-    private String errorString;
+    private final String errorString;
 
     GameSolverErrorCode(String errorString) {
         this.errorString = errorString;

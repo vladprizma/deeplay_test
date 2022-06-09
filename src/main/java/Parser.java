@@ -12,8 +12,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@Getter
-@AllArgsConstructor
+
 public class Parser {
 
     public static Map<String, Terms> readTerms(final String pathToTerms) throws GameSolverException {
@@ -45,5 +44,4 @@ public class Parser {
         }
         return null;
     }
-
 }

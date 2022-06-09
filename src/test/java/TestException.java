@@ -8,7 +8,7 @@ public class TestException {
 
     @Test
     public void testIncorrectFieldLength() throws GameSolverException {
-        Params.setPathToTermsFile(Params.baseTermsPath);
+        Params.setPathToTermsFile(TestSolution.baseTermsPath);
         try {
             Solution.getResult("SHORT", "Human");
         } catch (GameSolverException e) {
@@ -29,7 +29,7 @@ public class TestException {
 
     @Test
     public void testCreatureNotFound() throws GameSolverException {
-        Params.setPathToTermsFile(Params.baseTermsPath);
+        Params.setPathToTermsFile(TestSolution.baseTermsPath);
         try {
             Solution.getResult("HOHOHONOHOHOHONO", "isThereCreatureLikeThat?");
         } catch (GameSolverException e) {
@@ -40,7 +40,7 @@ public class TestException {
 
     @Test
     public void testSymbolNotFound() throws GameSolverException {
-        Params.setPathToTermsFile(Params.baseTermsPath);
+        Params.setPathToTermsFile(TestSolution.baseTermsPath);
         try {
             Solution.getResult("isThereCellSymb?", "Human");
         } catch (GameSolverException e) {

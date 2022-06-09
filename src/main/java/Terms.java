@@ -12,7 +12,7 @@ public class Terms {
     private Map<Character, Integer> cellCost;// Препятствие, стоимость перемещения
 
     public static boolean isValid(final Terms terms) {
-        return !Params.isBlank(terms.getEntityName()) && terms.getCellCost().values().stream().noneMatch(num -> (num < 0 || num == Integer.MAX_VALUE));
+        return !Params.isBlank(terms.getEntityName()) &&
+                terms.getCellCost().values().stream().noneMatch(num -> (num < 0 || num == Integer.MAX_VALUE));
     }
-
 }
